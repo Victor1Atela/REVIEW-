@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)http://localhost/Campain_feedback/feedback.php -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .form-container {
+            color: white;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1;
+        }
+        .form-container input,.form-container textarea,.form-container select {
+            background color: silver;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: green;
+            color: white;
+            font-size: 16px;
+        }
+        /* Add background video styles */
+        .bg-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            z-index: -1;
+        }
+        /* Add social links styles */
+        .social-links {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .social-links a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+        }
+        .social-links a:hover {
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <video class="bg-video" autoplay="" loop="" muted="">
+        <source src="review.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="form-container">
+        <h2>Submit Your Feedback</h2>
+        <form action="http://localhost/Campain_feedback/submit_feedback.php" method="POST" onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required="">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required="">
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" required=""></textarea>
+            <label for="rating">Rating:</label>
+            <select id="rating" name="rating" required="">
+                <option value="">Select Rating</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+        <div class="social-links">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+    <script>
+        function validateForm() {
+            const rating = document.getElementById("rating").value;
+            if (rating === "") {
+                alert("Please select a rating.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+
+
+
+Invalid request method.
+
+<style>
+                table {
+                    border-collapse: collapse;
+                    width: 100%;
+                }
+                th, td {
+                    border: 1px solid #ddd;
+                    padding: 10px;
+                    text-align: left;
+                }
+                th {
+                    background-color: #f0f0f0;
+                }
+                tr:nth-child(even) {
+                    background-color: green;
+                }
+              </style><table border="1">
+            <tbody><tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Feedback</th>
+                <th>Rating</th>
+                <th>Submission Date</th>
+            </tr><tr>
+                <td>1</td>
+                <td>522</td>
+                <td>victoratela5@gmail.com</td>
+                <td>we will win</td>
+                <td>2</td>
+                <td>2024-06-27 05:57:33</td>
+              </tr><tr>
+                <td>2</td>
+                <td>teddy ateto</td>
+                <td>victoratela5@gmail.com</td>
+                <td>wajakoya</td>
+                <td>3</td>
+                <td>2024-06-27 05:58:20</td>
+              </tr><tr>
+                <td>3</td>
+                <td>teddy ateto</td>
+                <td>victoratela5@gmail.com</td>
+                <td>wajakoya</td>
+                <td>3</td>
+                <td>2024-06-27 06:00:27</td>
+              </tr><tr>
+                <td>4</td>
+                <td>Jacob Ongele</td>
+                <td>jongele@yahoo.com</td>
+                <td>raila to be the chair of au</td>
+                <td>4</td>
+                <td>2024-06-27 06:02:47</td>
+              </tr><tr>
+                <td>5</td>
+                <td>Jacob Ongele</td>
+                <td>jongele@yahoo.com</td>
+                <td>raila to be the chair of au</td>
+                <td>4</td>
+                <td>2024-06-27 06:04:25</td>
+              </tr><tr>
+                <td>6</td>
+                <td>Jacob Ongele</td>
+                <td>jongele@yahoo.com</td>
+                <td>raila to be the chair of au</td>
+                <td>4</td>
+                <td>2024-06-27 06:08:52</td>
+              </tr><tr>
+                <td>7</td>
+                <td>Jacob Ongele</td>
+                <td>jongele@yahoo.com</td>
+                <td>raila to be the chair of au</td>
+                <td>4</td>
+                <td>2024-06-27 06:21:28</td>
+              </tr><tr>
+                <td>8</td>
+                <td>Jacob Ongele</td>
+                <td>jongele@yahoo.com</td>
+                <td>raila to be the chair of au</td>
+                <td>4</td>
+                <td>2024-06-27 06:24:22</td>
+              </tr><tr>
+                <td>9</td>
+                <td>aida keziah</td>
+                <td>aidak@hotmail.com</td>
+                <td>i feel the gen Z have been had</td>
+                <td>5</td>
+                <td>2024-06-27 06:32:42</td>
+              </tr><tr>
+                <td>10</td>
+                <td>ken juma</td>
+                <td>j2@gmail.com</td>
+                <td>Gen Z have it</td>
+                <td>5</td>
+                <td>2024-06-27 07:19:38</td>
+              </tr><tr>
+                <td>11</td>
+                <td>ken juma</td>
+                <td>j2@gmail.com</td>
+                <td>Gen Z have it</td>
+                <td>5</td>
+                <td>2024-06-27 07:21:39</td>
+              </tr><tr>
+                <td>12</td>
+                <td>teddy ateto</td>
+                <td>www.atetoteddy@gmail.com</td>
+                <td>Is this one working right now?</td>
+                <td>3</td>
+                <td>2024-07-05 03:21:07</td>
+              </tr></tbody></table></body></html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)http://localhost/Campain_feedback/Campain_feedback.php -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+        
+        body {
+            font-family: "Times New Roman", Times, serif;
+            background-color: purple;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-container input, .form-container textarea, .form-container select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: green;
+            color: black;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2><b><u>Submit Your Feedback</u></b></h2>
+        <form action="http://localhost/Campain_feedback/Campain_feedback.php" method="POST" oncampain="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required="">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required="">
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" required=""></textarea>
+            <label for="rating">Rating:</label>
+            <select id="rating" name="rating" required="">
+                <option value="">Select Rating</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script>
+        function validateForm() {
+            const rating = document.getElementById("rating").value;
+            if (rating === "") {
+                alert("Please select a rating.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+
+
+
+
+
+New record created successfully
+
+<table border="2">
+            <tbody><tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Feedback</th>
+                <th>Rating</th>
+                <th>Submission Date</th>
+            </tr><tr>
+                <td>1</td>
+                <td>522</td>
+                <td>victoratela5@gmail.com</td>
+                <td>we will win</td>
+                <td>2</td>
+                <td>2024-06-27 05:57:33</td>
+              </tr><tr>
+                <td>2</td>
+                <td>teddy ateto</td>
+                <td>victoratela5@gmail.com</td>
+                <td>wajakoya</td>
+                <td>3</td>
+                <td>2024-06-27 05:58:20</td>
+              </tr><tr>
+                <td>3</td>
+                <td>teddy ateto</td>
+                <td>victoratela5@gmail.com</td>
+                <td>wajakoya</td>
+                <td>3</td>
+                <td>2024-06-27 06:00:27</td>
+              </tr><tr>
+                <td>4</td>
+                <td>Jacob Ongele</td>
+                <td>jongele@yahoo.com</td>
+                <td>raila to be the chair of au</td>
+                <td>4</td>
+                <td>2024-06-27 06:02:47</td>
+              </tr><tr>
+                <td>5</td>
+                <td>Jacob Ongele</td>
+                <td>jongele@yahoo.com</td>
+                <td>raila to be the chair of au</td>
+                <td>4</td>
+                <td>2024-06-27 06:04:25</td>
+              </tr><tr>
+                <td>6</td>
+                <td>Jacob Ongele</td>
+                <td>jongele@yahoo.com</td>
+                <td>raila to be the chair of au</td>
+                <td>4</td>
+                <td>2024-06-27 06:08:52</td>
+              </tr></tbody></table></body></html>
